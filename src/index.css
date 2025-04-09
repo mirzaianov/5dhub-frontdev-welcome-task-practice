@@ -2,15 +2,18 @@
   --neutral-00: #ffffff;
   --neutral-10: #f5f5f5;
   --neutral-20: #dddddd;
+  --neutral-30: #aaaaaa;
   --neutral-60: #777777;
   --neutral-70: #434343;
   --neutral-80: #333333;
   --primary-color: #4caf50;
   --secondary-color: #ffd700;
+  --tertiary-color: #f44336;
 
   --background-color: var(--neutral-10);
   --todo-background-color: var(--neutral-00);
   --text-color: var(--neutral-80);
+  --completed-color: var(--neutral-60);
   --button-color: var(--primary-color);
   --tasks-border-color: var(--neutral-20);
   --toggle-border-color: var(--neutral-20);
@@ -18,12 +21,17 @@
   --shadow-color: rgba(0, 0, 0, 0.1);
   --toggle-button-color: var(--neutral-00);
   --toggle-icon-color: var(--neutral-60);
+  --checkbox-background-color: var(--neutral-00);
+  --checkbox-border-color: var(--neutral-60);
+  --checkbox-accent-color: var(--neutral-60);
+  --close-button-color: var(--tertiary-color);
 }
 
 [data-theme='dark'] {
   --background-color: var(--neutral-70);
   --todo-background-color: var(--neutral-80);
   --text-color: var(--neutral-10);
+  --completed-color: var(--neutral-30);
   --button-color: var(--primary-color);
   --tasks-border-color: var(--neutral-60);
   --toggle-border-color: var(--neutral-60);
@@ -31,6 +39,10 @@
   --shadow-color: rgba(255, 255, 255, 0.1);
   --toggle-button-color: var(--neutral-80);
   --toggle-icon-color: var(--secondary-color);
+  --checkbox-background-color: var(--neutral-70);
+  --checkbox-border-color: var(--neutral-20);
+  --checkbox-accent-color: var(--neutral-20);
+  --close-button-color: var(--tertiary-color);
 }
 
 body {

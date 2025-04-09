@@ -25,10 +25,7 @@ const TodoItem: React.FC<TodoItemProps> = ({
           checked={completed}
           onChange={() => onToggle(id)}
         />
-        <span
-          className={`todo-item__text ${completed ? 'completed' : ''}`}
-          onClick={() => onToggle(id)}
-        >
+        <span className={`todo-item__text ${completed ? 'completed' : ''}`}>
           {text}
         </span>
       </div>
