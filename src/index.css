@@ -6,6 +6,7 @@
   --neutral-70: #434343;
   --neutral-80: #333333;
   --primary-color: #4caf50;
+  --secondary-color: #ffd700;
 
   --background-color: var(--neutral-10);
   --todo-background-color: var(--neutral-00);
@@ -16,6 +17,7 @@
   --placeholder-color: var(--neutral-60);
   --shadow-color: rgba(0, 0, 0, 0.1);
   --toggle-button-color: var(--neutral-00);
+  --toggle-icon-color: var(--neutral-60);
 }
 
 [data-theme='dark'] {
@@ -28,6 +30,7 @@
   --placeholder-color: var(--neutral-60);
   --shadow-color: rgba(255, 255, 255, 0.1);
   --toggle-button-color: var(--neutral-80);
+  --toggle-icon-color: var(--secondary-color);
 }
 
 body {
@@ -57,4 +60,26 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.sun-icon {
+  fill: var(--toggle-icon-color);
+  opacity: 0;
+  transform: scale(1);
+}
+
+.moon-icon {
+  fill: var(--toggle-icon-color);
+  opacity: 1;
+  transform: scale(0.8);
+}
+
+[data-theme='dark'] .sun-icon {
+  opacity: 1;
+  transform: scale(0.8);
+}
+
+[data-theme='dark'] .moon-icon {
+  opacity: 0;
+  transform: scale(1);
 }
