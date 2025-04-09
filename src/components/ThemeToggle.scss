@@ -3,12 +3,12 @@
   align-items: center;
   gap: 8px;
   padding: 8px 16px;
-  background: var(--toggle-button-color);
+  background-color: var(--toggle-button-color);
+  color: var(--text-color);
   border: 2px solid var(--toggle-border-color);
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-  color: var(--text-color);
 
   &:hover {
     transform: scale(1.05);

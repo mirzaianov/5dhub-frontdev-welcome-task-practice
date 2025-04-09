@@ -6,6 +6,7 @@
   background-color: var(--background-color);
   border-radius: 5px;
   box-shadow: 0 1px 2px var(--shadow-color);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 
   .checkbox-wrapper {
     display: flex;
@@ -24,17 +25,19 @@
       appearance: none;
       background-color: var(--checkbox-background-color);
       border: 1px solid var(--checkbox-border-color);
-      transition: background-color 0.3s ease, border-color 0.3s ease;
+      transition: all 0.3s ease;
 
       &:checked {
         appearance: auto;
         accent-color: var(--checkbox-accent-color);
+        transition: accent-color 0.3s ease;
       }
     }
   }
 
   &__text {
     color: var(--text-color);
+    transition: color 0.3s ease;
   }
 
   .delete-button {
@@ -72,6 +75,7 @@
 .completed {
   color: var(--completed-color);
   text-decoration: line-through;
+  transition: all 0.3s ease;
 }
 
 @keyframes pulse {
