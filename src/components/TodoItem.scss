@@ -1,0 +1,18 @@
+.delete-button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgb(211, 106, 106);
+  }
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+    fill: #f44336;
+  }
+}
