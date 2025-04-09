@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from 'react';
+import { useState, FormEvent } from 'react';
 import ThemeToggle from './ThemeToggle';
 import TodoItem from './TodoItem';
 
@@ -10,7 +10,11 @@ interface Task {
   completed: boolean;
 }
 
-const Todo: React.FC = () => {
+type TodoProps = {
+  onThemeToggle: () => void;
+};
+
+const Todo: React.FC<TodoProps> = ({ onThemeToggle }) => {
   const [inputValue, setInputValue] = useState<string>('');
   const [tasks, setTasks] = useState<Task[]>([]);
 
@@ -45,7 +49,7 @@ const Todo: React.FC = () => {
     <div className="todo-container">
       <div className="todo-header">
         <h1>Список задач</h1>
-        <ThemeToggle />
+        <ThemeToggle onClick={onThemeToggle} />
       </div>
 
       <form
