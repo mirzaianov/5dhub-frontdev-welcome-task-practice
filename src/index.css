@@ -1,13 +1,33 @@
 :root {
-  --background-color: #f5f5f5;
-  --text-color: #333;
+  --neutral-00: #ffffff;
+  --neutral-10: #f5f5f5;
+  --neutral-20: #dddddd;
+  --neutral-60: #777777;
+  --neutral-70: #434343;
+  --neutral-80: #333333;
   --primary-color: #4caf50;
+
+  --background-color: var(--neutral-10);
+  --todo-background-color: var(--neutral-00);
+  --text-color: var(--neutral-80);
+  --button-color: var(--primary-color);
+  --tasks-border-color: var(--neutral-20);
+  --toggle-border-color: var(--neutral-20);
+  --placeholder-color: var(--neutral-60);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --toggle-button-color: var(--neutral-00);
 }
 
 [data-theme='dark'] {
-  --background-color: #333;
-  --text-color: #f5f5f5;
-  --primary-color: #4caf50;
+  --background-color: var(--neutral-70);
+  --todo-background-color: var(--neutral-80);
+  --text-color: var(--neutral-10);
+  --button-color: var(--primary-color);
+  --tasks-border-color: var(--neutral-60);
+  --toggle-border-color: var(--neutral-60);
+  --placeholder-color: var(--neutral-60);
+  --shadow-color: rgba(255, 255, 255, 0.1);
+  --toggle-button-color: var(--neutral-80);
 }
 
 body {
