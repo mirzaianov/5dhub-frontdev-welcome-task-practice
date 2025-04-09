@@ -81,7 +81,7 @@
   }
   60% {
     transform: scale(1);
-    background-color: #f443363c;
+    background-color: var(--close-button-hover-color);
   }
   100% {
     transform: scale(1.2);

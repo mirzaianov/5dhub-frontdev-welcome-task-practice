@@ -9,6 +9,7 @@
   --primary-color: #4caf50;
   --secondary-color: #ffd700;
   --tertiary-color: #f44336;
+  --quaternary-color: #f443363c;
 
   --background-color: var(--neutral-10);
   --todo-background-color: var(--neutral-00);
@@ -25,6 +26,7 @@
   --checkbox-border-color: var(--neutral-60);
   --checkbox-accent-color: var(--neutral-60);
   --close-button-color: var(--tertiary-color);
+  --close-button-hover-color: var(--quaternary-color);
 }
 
 [data-theme='dark'] {
@@ -43,6 +45,7 @@
   --checkbox-border-color: var(--neutral-20);
   --checkbox-accent-color: var(--neutral-20);
   --close-button-color: var(--tertiary-color);
+  --close-button-hover-color: var(--quaternary-color);
 }
 
 body {
