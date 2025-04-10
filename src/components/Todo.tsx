@@ -28,6 +28,7 @@ const Todo: React.FC<TodoProps> = ({ onThemeToggle }) => {
       id: Date.now(),
       text: inputValue,
       completed: false,
+      date: new Date().toISOString(),
     };
 
     setTasks([...tasks, newTask]);
@@ -81,6 +82,7 @@ const Todo: React.FC<TodoProps> = ({ onThemeToggle }) => {
             completed={task.completed}
             onToggle={toggleTaskCompletion}
             onDelete={deleteTask}
+            date={task.date}
           />
         ))}
       </ul>
