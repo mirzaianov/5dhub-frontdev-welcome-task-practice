@@ -31,6 +31,7 @@
   --checkbox-accent-color: var(--neutral-60);
   --close-button-color: var(--tertiary-color);
   --close-button-hover-color: var(--quaternary-color);
+  --date-color: var(--neutral-60);
 }
 
 [data-theme='dark'] {
@@ -50,6 +51,7 @@
   --checkbox-accent-color: var(--neutral-20);
   --close-button-color: var(--tertiary-color);
   --close-button-hover-color: var(--quaternary-color);
+  --date-color: var(--neutral-60);
 }
 
 body {
