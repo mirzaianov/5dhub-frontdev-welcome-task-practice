@@ -4,11 +4,12 @@ import TodoItem from './TodoItem';
 
 import './Todo.scss';
 
-interface Task {
+type Task = {
   id: number;
   text: string;
   completed: boolean;
-}
+  date: string;
+};
 
 type TodoProps = {
   onThemeToggle: () => void;
