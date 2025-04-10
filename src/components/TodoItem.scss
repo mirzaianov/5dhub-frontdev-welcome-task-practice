@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   padding: 0.5rem;
   background-color: var(--background-color);
   border-radius: 5px;
@@ -52,6 +53,15 @@
     transition-delay: var(--transition-delay);
   }
 
+  &__date {
+    font-size: 0.875rem;
+    color: var(--date-color);
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+    transition-delay: var(--transition-delay);
+  }
+
   .delete-button {
     position: relative;
     width: 2rem;
@@ -76,12 +86,16 @@
       }
     }
 
-    svg {
+    &__icon {
+      display: grid;
+      place-items: center;
       width: 1.25rem;
       height: 1.25rem;
 
-      path {
-        fill: var(--close-button-color);
+      svg {
+        path {
+          fill: var(--close-button-color);
+        }
       }
     }
   }
