@@ -6,7 +6,10 @@
   background-color: var(--background-color);
   border-radius: 5px;
   box-shadow: 0 1px 2px var(--shadow-color);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition-property: background-color, box-shadow;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  transition-delay: var(--transition-delay);
 
   .checkbox-wrapper {
     display: flex;
@@ -25,19 +28,28 @@
       appearance: none;
       background-color: var(--checkbox-background-color);
       border: 1px solid var(--checkbox-border-color);
-      transition: all 0.3s ease;
+      transition-property: all;
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--transition-timing-function);
+      transition-delay: var(--transition-delay);
 
       &:checked {
         appearance: auto;
         accent-color: var(--checkbox-accent-color);
-        transition: accent-color 0.3s ease;
+        transition-property: accent-color;
+        transition-duration: var(--transition-duration);
+        transition-timing-function: var(--transition-timing-function);
+        transition-delay: var(--transition-delay);
       }
     }
   }
 
   &__text {
     color: var(--text-color);
-    transition: color 0.3s ease;
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+    transition-delay: var(--transition-delay);
   }
 
   .delete-button {
@@ -54,7 +66,10 @@
       height: 100%;
       border-radius: 50%;
       background-color: transparent;
-      transition: transform 0.3s ease;
+      transition-property: transform;
+      transition-duration: var(--transition-duration);
+      transition-timing-function: var(--transition-timing-function);
+      transition-delay: var(--transition-delay);
 
       &:hover {
         animation: pulse 1500ms infinite ease-in-out;
@@ -75,7 +90,10 @@
 .completed {
   color: var(--completed-color);
   text-decoration: line-through;
-  transition: all 0.3s ease;
+  transition-property: all;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  transition-delay: var(--transition-delay);
 }
 
 @keyframes pulse {

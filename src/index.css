@@ -11,6 +11,10 @@
   --tertiary-color: #f44336;
   --quaternary-color: #f443363c;
 
+  --transition-duration: 0.3s;
+  --transition-timing-function: ease-in-out;
+  --transition-delay: 0s;
+
   --background-color: var(--neutral-10);
   --todo-background-color: var(--neutral-00);
   --text-color: var(--neutral-80);

@@ -1,6 +1,9 @@
 .App {
   min-height: 100vh;
   background-color: var(--background-color);
-  transition: background-color 0.3s ease;
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  transition-delay: var(--transition-delay);
   padding: 20px;
 }
