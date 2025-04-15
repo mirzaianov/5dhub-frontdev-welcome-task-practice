@@ -1,9 +1,4 @@
 .App {
-  min-height: 100vh;
-  background-color: var(--background-color);
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-  transition-delay: var(--transition-delay);
+  height: 100%;
   padding: 20px;
 }
